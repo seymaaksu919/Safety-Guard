@@ -1,6 +1,6 @@
 🦺 Safety Guard AI – Endüstriyel İSG İzleme Sistemi
 <p align="center"> <img src="https://img.shields.io/badge/AI-YOLOv8-blue"> <img src="https://img.shields.io/badge/IoT-ESP32-orange"> <img src="https://img.shields.io/badge/Backend-Flask-green"> <img src="https://img.shields.io/badge/Database-Supabase-lightgreen"> </p>
-📌 Proje Özeti
+📌 PROJE ÖZETİ
 <p> <strong>Safety Guard AI</strong>, endüstriyel üretim sahalarında iş güvenliğini sağlamak için geliştirilmiş IoT + Yapay Zeka tabanlı gerçek zamanlı bir İSG izleme sistemidir. </p> <p> Sistem; biyometrik veriler, çevresel sensörler ve kamera görüntülerini birleştirerek <span style="color:#ff4d4d;"><b>anlık risk analizi ve KKD ihlali tespiti</b></span> yapar. </p>
 ⚠️ Problem Tanımı
 <ul> <li>Periyodik kontroller gerçek zamanlı riskleri yakalayamaz</li> <li>KKD (baret, yelek, maske) ihlalleri geç fark edilir</li> <li>Gaz, sıcaklık ve yangın riskleri anlık izlenmez</li> </ul>
