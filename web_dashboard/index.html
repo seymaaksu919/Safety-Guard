@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safety Guard — Web Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <span class="logo">🛡️</span>
+      <div>
+        <h1>SAFETY GUARD AI</h1>
+        <p class="subtitle">Kayıtlı kullanıcılar — canlı sensör grafikleri</p>
+      </div>
+    </div>
+    <div class="header-clock" aria-label="Canlı saat">
+      <span id="liveClock" class="clock-time">--:--:--</span>
+      <span id="liveDate" class="clock-date"></span>
+    </div>
+  </header>
+
+  <main class="main">
+    <div id="dashboardPanel">
+      <div class="stats-grid">
+        <div class="stat-card stat-active">
+          <span class="stat-label">Aktif Çalışan</span>
+          <div class="stat-row">
+            <span id="statActive" class="stat-value">—</span>
+            <span id="statActiveSub" class="stat-sub"></span>
+          </div>
+          <span id="statActiveHint" class="stat-hint">Sensör verisi gönderen kullanıcı</span>
+        </div>
+        <div class="stat-card stat-warn">
+          <span class="stat-label">Riskli Durum</span>
+          <span id="statRisky" class="stat-value">—</span>
+        </div>
+        <button
+          type="button"
+          class="stat-card stat-ppe stat-clickable"
+          id="statPpeCard"
+          aria-label="Kişisel koruyucu ekipman takibini aç"
+        >
+          <span class="stat-label">Kişisel Koruyucu Ekipman Takibi</span>
+          <span id="statPpe" class="stat-value">—</span>
+          <span id="statPpeHint" class="stat-hint">Ortam izleme — tıklayın</span>
+        </button>
+      </div>
+      <p id="liveStatus" class="live-status">Canlı güncelleme: —</p>
+      <div id="setupHint" class="setup-hint hidden"></div>
+      <div id="loading" class="loading">Yükleniyor…</div>
+      <div id="error" class="error hidden"></div>
+      <div id="userList" class="user-list"></div>
+    </div>
+
+    <section id="ppePanel" class="ppe-view hidden" aria-label="KKD takip paneli">
+      <button type="button" id="ppeBackBtn" class="btn btn-back">← Sensör paneline dön</button>
+      <h2 class="ppe-view-title">Kişisel Koruyucu Ekipman Takibi</h2>
+      <p id="ppeSummary" class="ppe-summary"></p>
+      <div class="ppe-layout">
+        <div class="ppe-camera-wrap">
+          <img
+            id="ppeCamera"
+            class="ppe-camera"
+            src=""
+            alt="YOLO işaretlemeli canlı kamera görüntüsü"
+          />
+          <p id="ppeCameraStatus" class="ppe-camera-status">Kamera bağlanıyor…</p>
+        </div>
+        <div id="ppeStatusGrid" class="ppe-items-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/chart.umd.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+name: flutter_application_1
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Paketleri buraya, flutter: satırı ile dikeyde aynı hizaya ekliyoruz.
+  supabase_flutter: ^2.8.1
+  http: ^1.2.2
+  audioplayers: ^6.1.0
+  flutter_tts: ^4.2.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/kapak.png
+  
+
+
+
+  

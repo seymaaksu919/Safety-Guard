@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+env/
+venv/
+.venv/
+
+# PyTorch / model files (large binaries)
+*.pt
+*.pth
+best.pt
+yolov8n.pt
+yolo26n.pt
+
+# Git LFS attributes
+.gitattributes
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+
+# Flutter / Dart
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+/.dart_tool/
+/.pub-cache/
+
+# Android / IDE
+android/local.properties
+*.keystore
+*.jks
+*.iml
+.idea/
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Secrets / credentials
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# Misc
+*.swp
+Thumbs.db
+Desktop.ini
